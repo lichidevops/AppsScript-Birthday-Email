@@ -23,7 +23,6 @@ function emailReminder() {
       let birthdayMonth = birhtdayMonthDate.getMonth()+1;
       let birthdayPersonEmail = row[4];
       let peopleToCC = 'email1@email.com, email2@email.com, email3@email.com,';
-      if (birthdayPersonEmail==="chkim@dwight.or.kr"){continue};
       if (birthdayMonth === todayMonth && birthdayDate === todayDay){
         let birthdayMessage = new BirthdayMessages().getBirthdayMessage();
         let emailObject = {};
